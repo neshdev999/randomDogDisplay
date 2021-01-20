@@ -15,18 +15,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
 
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
 </head>
 
-<body>
+<body class="bodyStyles">
     <header>
         <h1 class="mainHeading">Dogs Display</h1>
     </header>
-    <main>
+    <main class="mainStylesHolder">
         <div class="userInputHolder">
             <form>
                 <div>
                     <span>Number of Dogs</span>
-                    <span><input type="number" id="numberOfDogIndicator" name="numberOfDogsDisplay" min="1" max="50" placeholder="3" value="3"></span>
+                    <span><input type="number" id="numberOfDogIndicator" name="numberOfDogsDisplay" min="1" max="50" value="3" required></span>
                 </div>
                 <div>
                     <span class="submitButtonHolder">
@@ -37,7 +43,35 @@
                 </div>
             </form>
         </div>
+        <div class="userOutputWrapper">
+            <div class="userOuputHolder">
+                <div class="placeHolderHeader">
+                    <div>
+                        <h2>Amazing dogs are coming here!!!</h2>
+                    </div>
+                    <div class="dogImage1">
+                        <img src="https://images.dog.ceo/breeds/coonhound/n02089078_2841.jpg" alt="dog" width="50%" height="200px">
+                    </div>
+                    <br>
+                    <div class="dogImage2">
+                        <img src="https://images.dog.ceo/breeds/spaniel-welsh/n02102177_2524.jpg" alt="dog" width="50%" height="200px">
+                    </div>
+                    <br>
+                    <div class="dogImage3">
+                        <img src="https://images.dog.ceo/breeds/terrier-wheaten/n02098105_2001.jpg" alt="dog" width="50%" height="200px">
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <div id="footer">
+        </div>
+    </footer>
 
     <!-- jQuery CDN-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
