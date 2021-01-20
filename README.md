@@ -1,2 +1,2 @@
-# randomDogDisplay
-Random dog images display board
+# Display Board for Random Dog Images
+Random dog images display based on user input 
