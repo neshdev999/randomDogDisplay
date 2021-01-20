@@ -1,3 +1,5 @@
+/* Common Styles */
+
 html {
     box-sizing: border-box;
 }
@@ -110,7 +112,7 @@ form div {
 
 /*Form Button Styles */
 
-.styled {
+.submitButtonstyled {
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
@@ -124,11 +126,11 @@ form div {
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
-.styled:hover {
+.submitButtonstyled:hover {
     background-color: rgba(255, 0, 0, 1);
 }
 
-.styled:active {
+.submitButtonstyled:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
@@ -192,9 +194,15 @@ form div {
         width: 280px;
         height: 300px;
     }
-    .placeHolderHeader {
+    .placeHolderHeaderText {
         margin-left: 30%;
         margin-right: 30%;
+    }
+    .placeHolderImageHeaderContainer {
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        margin-top: 20px;
     }
 }
 
