@@ -30,6 +30,8 @@ function getDogImage(defaultValAvailCheck) {
 function watchForm() {
     $('form').submit(event => {
       event.preventDefault();
+      // $('.userOuputHolder').addClass('hidden');
+      $('.userOutputDefaultHolder').addClass('hidden');
       // Remove placeholder header
       if($('.placeHolderHeader').length){
         $(".placeHolderHeader").remove();
@@ -43,24 +45,29 @@ function watchForm() {
       for(let i=0; i<dogCount; i++){
         getDogImage(false);
       }
+      $('.userOuputHolder').removeClass('hidden');
     });
 }
 
 /* Load three random dog images on page load */
 function initialDefaultDogImages(){
+  // set input number to default value
+    $('#numberOfDogIndicator').val(3);
     for(let i=0; i<3; i++){
         getDogImage(true);
       }
+    $('.placeHolderImageHeaderContainer').removeClass('hidden');
+    $('.userOuputHolder').removeClass('hidden');
 }
 
 
 /* Footer */
 function generateFooter() {
-    const yogiFooterBase = yogiFooter();
-    $('#footer').append(yogiFooterBase);
+    const dogFooterBase = dogFooter();
+    $('#footer').append(dogFooterBase);
 }
 
-function yogiFooter() {
+function dogFooter() {
     return `<div class="footContain"><div class="footStyles"><span>&nbsp;Dogs Panel&nbsp;&nbsp;<br></span><span>Nesh &copy; ${getCopyRightYear()}</span></div></div>`;
 }
 

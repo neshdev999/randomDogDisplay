@@ -139,12 +139,18 @@ form div {
 
 .userOutputWrapper {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: beige;
 }
 
 .userOuputHolder {
+    display: flex;
+    flex-direction: column;
+}
+
+.userOutputDefaultHolder {
     display: flex;
     flex-direction: column;
 }
@@ -172,6 +178,7 @@ form div {
 @media screen and (min-width: 992px) {
     .userOutputWrapper {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: beige;
@@ -186,12 +193,23 @@ form div {
         margin-top: 2%;
         margin-bottom: 2%;
     }
+    .userOutputDefaultHolder {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
     .dogImageContainer {
         flex: 0 0 300px;
-        margin: 0px;
+        margin: 1px;
+        width: 280px;
     }
     .dogImageContainer img {
-        width: 280px;
+        width: 100%;
         height: 300px;
     }
     .placeHolderHeaderText {
@@ -219,4 +237,11 @@ form div {
 
 .footStyles {
     color: whitesmoke;
+}
+
+
+/* Image Display */
+
+.hidden {
+    display: none;
 }
