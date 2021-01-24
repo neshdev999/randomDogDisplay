@@ -26,23 +26,6 @@ function getDogImage(defaultValAvailCheck) {
         .catch(error => alert('Something went wrong. Try again later.'));
 }
 
-/* Handle actions after form submission */
-
-
-function handleEnterClicks() {
-
-    $("#numberOfDogIndicator").keyup(function(event) {
-        if (event.keyCode === 13) {
-            $("#dog-select").attr('aria-pressed', true)
-            const pressedBool = $('#dog-select').attr('aria-pressed') === 'true';
-            console.log(pressedBool);
-            if (pressedBool) {
-                $('#submitButtonId').click();
-            }
-        }
-    });
-}
-
 function watchForm() {
     $('form').submit(event => {
         event.preventDefault();
@@ -75,9 +58,6 @@ function initialDefaultDogImages() {
     $('.placeHolderImageHeaderContainer').removeClass('hidden');
     $('.userOuputHolder').removeClass('hidden');
 }
-
-
-
 
 /* Footer */
 function generateFooter() {
@@ -129,7 +109,6 @@ $(window).bind("load", function() {
 $(function() {
     console.log('App loaded! Waiting for submit!');
     initialDefaultDogImages();
-    handleEnterClicks();
     watchForm();
     generateFooter();
 });
