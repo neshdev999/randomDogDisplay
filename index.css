@@ -86,13 +86,21 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: lightskyblue;
+    margin: 2%;
+    padding: 1%;
+    border-radius: 5px;
 }
 
 form div {
     flex: 1;
-    /* margin: 1%;
-    padding: 1%; */
     margin: 10px;
+}
+
+#numberOfDogIndicator {
+    border: 2px solid lightgray;
+    width: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -132,6 +140,11 @@ form div {
 
 .submitButtonstyled:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.submitButtonstyled:focus {
+    outline: darkblue solid 2px;
+    outline-style: inset;
 }
 
 
